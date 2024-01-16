@@ -1,121 +1,65 @@
 <html>
-<head>
-        <meta charset="utf-8" />
-		<title>柠檬影视</title>
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />        
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<script type="text/javascript" src="/templets/youxi/js/rem.js"></script>
-		<script type="text/javascript" src="/templets/youxi/js/jquery-1.7.2.min.js"></script>
-		<link href="/templets/youxi/css/swiper-3.4.1.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="/templets/youxi/css/common.css" />
-		<link rel="stylesheet" type="text/css" href="/templets/youxi/css/index.css" />
-        
-</head>
-<body class="body">
 
-		<div class="index-top-body">
-			<div class="top-img swiper-container">
-				<!--商标图-->
-				<div class="swiper-wrapper" >
-                     <img src="/images/nmys.png" width="100%" height="100%">
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		<div class="index-middle-body">
-		    <a href="http://m.ssr021.cn/app/index.html?id=test" style="color: #303030;">
-			<div style=" width: 100%;height:70px;display: flex;flex-direction: row;align-items: center;justify-items: center;">
-				<div style="width: 92%;margin:0 auto;height: 50px;border-radius:32px;border-style:solid;display: flex;align-items: center;justify-content: center;">
-				    <text style="color:#909090;font-size: 18px;">请输入需要搜索电影、电视剧</text>
-				 </div>
-		
-			</div>
-				</a>
-			<div style="display: flex;text-align: center;">
-		    	<div class="top-text" style="margin: 0 auto;">
-				<!--公告文字-->
-			          <div class="scroll-text top-text-notice fs14" style='color:red;font-weight:800;' id="scroll-text">
-			              <a href="" >
-			                  <div class="scroll-auto scroll-text" style='color:red;font-weight:800;'>每次进入搜索会比较慢，请耐心等待</div>
-			                </a>
-			              <a href="" >
-			                  <div class="scroll-auto scroll-text" style='color:red;font-weight:800;'>进入后出现空白，再刷新一下即可</div>
-			                </a>
-			                 <a href="" >
-			                  <div class="scroll-auto scroll-text" style='color:red;font-weight:800;'>最近上映的电影/电视剧，会第一时间更新</div>
-			                </a>
-			          </div>
-		    	</div>
+       <style>
 
-		    </div>
-			<div style="display: flex;text-align: center;margin-top:80px;">
-		        <div class="middle-title-text fs16" style="margin: 0 auto;color:red;font-weight:800;"><a href="http://www.sogohosting.com">在线观看模式→</a></div>
-		    </div>
-		</div>
-		</div>
-  
-  
-  
-  
-  
-		<div class="footer">
-			<div class="navbar">
-				<a class="navbar-item navbar-index"> <i class="navbar-icon icon-index"></i>
-					<p class="navbar-desc">
-						赚钱优选
-					</p>
-				</a>
-				<a class="navbar-item navbar-recommend"> <i class="navbar-icon icon-recommends"></i>
-					<p class="navbar-descs">
-						影视追剧
-					</p>
-				</a>
-				<a class="navbar-item navbar-read"> <i class="navbar-icon icon-read"></i>
-					<p class="navbar-desc">
-						个人中心
-					</p>
-				</a>
-			</div>
-		</div>
-	</body>
-	<!-- 滚动公告列表以及顶部点击事件 -->
-	<script type="text/javascript">
-    function get_query_val2(name) {
-	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-	var r = window.location.search.substr(1).match(reg);
-	if(r != null) return unescape(r[2]);
-	return null;
-}	
-	function autoScroll(obj) {
-			$(obj).find("#scroll-text").animate({
-				marginTop: "-35px"
-			}, 500, function() {
-				$(this).css({
-					marginTop: "0px"
-				}).find(".scroll-auto:first").appendTo(this);
-			})
-		}
-		$(function() {
-			setInterval('autoScroll(".top-text")', 2500);
-		})
-		
-	$(".switch-sm").click(function(){
-		$(".switch-popup").show();
-		var nowType2 = '';
-	    if(nowType2==2){
-		$(".system-now-android").show();				
-		}else{
-		$(".system-now-ios").show();}		
-	});		
-		$(".switch-big").click(function(){
-		$(".switch-popup").hide();
-	});	
-		
-		
-	</script>
-        <script src="/templets/youxi/js/clipboard.min.js"></script>
-	    <script type="text/javascript" src="/templets/youxi/js/swiper-3.4.1.min.js"></script>
-	    <script type="text/javascript" src="/templets/youxi/js/utils.js"></script>
-		<script type="text/javascript" src="/templets/youxi/js/common.js"></script>
-		<script type="text/javascript" src="/templets/youxi/js/index.js"></script>	
+               body {
+
+                   line-height:30px;
+
+                   background-color:#81ecec;
+
+               }
+
+               #main {
+
+                   text-align: center;
+
+                   position: relative;
+
+                   top: 15%;
+
+                   color: #ffffff;
+
+                   font-size:3rem;
+
+                   line-height:5rem;
+
+               }
+
+               #ad {
+
+                   position: absolute;
+
+                   right: 0px;
+
+                   bottom: 0px;
+
+                   color: #ffffff;
+
+               }
+
+               </style>    
+
+   <body>
+
+       <div id=main>
+
+           春晓</br>
+
+           作者：孟浩然</br>
+
+           春眠不觉晓，处处闻啼鸟。</br>
+
+           夜来风雨声，花落知多少。</br>
+
+       </div>
+
+       <div id=ad>
+
+           <img src="https://yooking.github.io/img/qrcode_for_gh_9ae9c8b0949b_258.jpg"></img>
+
+       </div>
+
+   </body>
+
 </html>
