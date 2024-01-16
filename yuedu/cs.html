@@ -1,0 +1,105 @@
+<html>
+<head>
+        <meta charset="utf-8" />
+		<title>柠檬影视</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />        
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<script type="text/javascript" src="/templets/youxi/js/rem.js"></script>
+		<script type="text/javascript" src="/templets/youxi/js/jquery-1.7.2.min.js"></script>
+		<link href="/templets/youxi/css/swiper-3.4.1.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/templets/youxi/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/templets/youxi/css/index.css" />
+        
+</head>
+<body class="body">
+
+		<div class="index-top-body">
+			<div class="top-img swiper-container">
+				<!--商标图-->
+				<div class="swiper-wrapper" >
+                     <img src="/images/nmys.png" width="100%" height="100%">
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		<div class="index-middle-body" onclick="checkValidation('http://u.ssr021.cn/app/index.html?id=test')">
+		   
+			<div style=" width: 100%;height:70px;display: flex;flex-direction: row;align-items: center;justify-items: center;">
+				<div style="width: 92%;margin:0 auto;height: 50px;border-radius:32px;border-style:solid;display: flex;align-items: center;justify-content: center;">
+				    <text style="color:#909090;font-size: 18px;">请输入需要搜索电影、电视剧</text>
+				 </div>
+			</div>
+			<div style="display: flex;text-align: center;">
+		    	<div class="top-text" style="margin: 0 auto;">
+				<!--公告文字-->
+			          <div class="scroll-text top-text-notice fs14" style='color:red;font-weight:800;' id="scroll-text">
+			              <a href="https://huaban.com/" >
+			                  <div class="scroll-auto scroll-text" style='color:red;font-weight:800;'>长烬明月，已更新~</div>
+			                </a>
+			              <a href="https://huaban.com/" >
+			                  <div class="scroll-auto scroll-text" style='color:red;font-weight:800;'>雷神3，已更新~</div>
+			                </a>
+			          </div>
+		    	</div>
+
+		    </div>
+			<div style="display: flex;text-align: center;margin-top:80px;" onclick="checkValidation('https://www.baidu.com')">
+		        <div class="middle-title-text fs16" style="margin: 0 auto;color:red;font-weight:800;"><a href="https://sourl.cn/NsvRcz">在线观看模式→</a></div>
+		    </div>
+		          <button onclick="checkValidation('https://www.baidu.com')">前往</button>
+  <br>
+  <button onclick="checkValidation('https://www.taobao.com')">返回</button>
+		</div>
+		</div>
+
+	</body>
+	<!-- 滚动公告列表以及顶部点击事件 -->
+	<script type="text/javascript">
+	 // 检查验证状态，并根据需要跳转到校验页面或目标网站
+    function checkValidation(targetUrl) {
+      const validated = localStorage.getItem("validated");
+      if (validated && new Date(validated) > new Date()) { // 在3天点击过期
+        window.location.href = targetUrl;
+      } else {
+        window.location.href = "validation.html";
+      }
+    }
+    function get_query_val2(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if(r != null) return unescape(r[2]);
+	return null;
+}	
+	function autoScroll(obj) {
+			$(obj).find("#scroll-text").animate({
+				marginTop: "-35px"
+			}, 500, function() {
+				$(this).css({
+					marginTop: "0px"
+				}).find(".scroll-auto:first").appendTo(this);
+			})
+		}
+		$(function() {
+			setInterval('autoScroll(".top-text")', 2500);
+		})
+		
+	$(".switch-sm").click(function(){
+		$(".switch-popup").show();
+		var nowType2 = '';
+	    if(nowType2==2){
+		$(".system-now-android").show();				
+		}else{
+		$(".system-now-ios").show();}		
+	});		
+		$(".switch-big").click(function(){
+		$(".switch-popup").hide();
+	});	
+		
+		
+	</script>
+        <script src="/templets/youxi/js/clipboard.min.js"></script>
+	    <script type="text/javascript" src="/templets/youxi/js/swiper-3.4.1.min.js"></script>
+	    <script type="text/javascript" src="/templets/youxi/js/utils.js"></script>
+		<script type="text/javascript" src="/templets/youxi/js/common.js"></script>
+		<script type="text/javascript" src="/templets/youxi/js/index.js"></script>	
+</html>

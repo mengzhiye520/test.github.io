@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="探米,积分墙,应用探米官网,北京无线探米科技股份有限公司,,广告激励平台,App试玩,手机赚钱,积米">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="author" content="zhaoxiaodong" />
+		<link rel="apple-touch-icon" href="img/icon.ico">
+		<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/common.css" />
+		<title></title>
+		<style>
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.wx-bg {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url(img/open-in-wx.png);
+				background-size: 100% 100%;
+				background-position: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			
+			@media only screen and (device-width: 375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+				.wx-bg {
+					background-image: url(img/open-in-wx-ix.png);
+				}
+			}
+			
+			.wx-alert {
+				/*display: none;*/
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.7);
+			}
+			
+			.wx-alert-g {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				width: 225px;
+				height: 110px;
+				background-image: url(img/icon-open-safari-new.png);
+				background-size: 100% 100%;
+				background-position: 100% 100%;
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+
+	<body class="body">
+		<div class="wx-bg"></div>
+		<div class="wx-alert">
+			<div class="wx-alert-g"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script>
+		$('.wx-bg').click(function() {
+			$('.wx-alert').show();
+		})
+		if(is_wechat()||is_qq()){
+			
+		}else{
+			window.location.href = "index.html";
+		}
+		getAnnounce()
+		//公告列表.首页正在试玩人数
+		function getAnnounce() {
+			$.ajax({
+				url: ANNOUNCE,
+				contentType: "application/json",
+				type: "get",
+				dataType: 'jsonp',
+				jsonp: 'backgg',
+				jsonpCallback: 'backgg',
+				async: true,
+				success: function(res) {
+					var data = res || {};
+					$('title').html(data.title);
+				},
+				error: function(res) {
+
+				}
+			});
+		}
+	</script>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+
+        
+</head>
+<body class="body">
+
+</body>
+	<!-- 滚动公告列表以及顶部点击事件 -->
+	<script type="text/javascript">
+
+    var u = navigator.userAgent, app = navigator.appVersion;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isAndroid) {
+        console.log('and');
+//        alert('安卓调转');
+//        window.location.herf = 'http://www.baidu.com';
+        location.href = '../anzhuo/Android.html';
+    }
+    if (isIOS) {
+        console.log('and');
+//        alert('安卓调转');
+//        window.location.herf = 'http://www.baidu.com';
+        location.href = '../anzhuo/iOS.html';
+    }
+	</script>
+</html>
