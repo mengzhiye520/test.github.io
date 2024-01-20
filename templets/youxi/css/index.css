@@ -823,7 +823,7 @@ body, html {
  .add-item-bottom{
      width: 7.837837837837838rem;
      height: 3.5135135135135136rem;
-     background-image: url(/images/add-desk-img-bottom.png);
+     background-image: url(../images/add-desk-img-bottom.png);
 }
  .add-icon-little{
      position: absolute;
@@ -858,7 +858,7 @@ body, html {
      background-repeat: no-repeat;
      background-position: 100% 100%;
      background-size: 100% 100%;
-     background-image: url(/images/add-finger.png);
+     background-image: url(../images/add-finger.png);
 }
 /**广告*/
  .advice{
@@ -867,7 +867,7 @@ body, html {
      background-repeat: no-repeat;
      background-position: 100% 100%;
      background-size: 100% 100%;
-     background-image: url(/images/advice.png);
+     background-image: url(../images/advice.png);
 }
 
 .video-button {
@@ -877,7 +877,7 @@ body, html {
 	height: 1.3513513513513513rem;
 	right: 0.15rem;
 	bottom: 4.8rem;
-	background-image: url(/images/video-button.png);
+	background-image: url(../images/video-button.png);
 	background-position: 100% 100%;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
