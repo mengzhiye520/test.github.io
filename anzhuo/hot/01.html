@@ -5,27 +5,11 @@
 <meta name="renderer" content="webkit" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<title></title>
-<meta name="title" content="" />
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta property="og:type" content="" />
-<meta property="og:title" content="" />
-<meta property="og:video:area" content="" />
-<meta property="og:video:language" content="" />
-<meta property="og:video:class" content="" />
-<meta property="og:video:director" content="" />
-<meta property="og:video:actor" content="" />
-<meta property="og:url" content="" />
-<meta property="og:video" content="" />
-<meta property="og:image" content="" />
-<meta property="og:description" content="" />
 <link rel="canonical" href="" />
-		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<link rel="stylesheet" type="text/css" href="C:\Users\w2744\Downloads\style.css" />
 </head>
 <body ontouchstart class="view page">
 <header id="header" class="wrapper">
-
 </header>
 <main id="main" class="wrapper">
 <div class="content">
@@ -107,45 +91,80 @@ color:#FF4500;
 </div>
 
 <div class="module">
-<div class="module-heading">
-<h2 class="module-title">在线观看</h2>
-</div>
-<div class="module-list module-player-list tab-list sort-list" itemscope itemprop="episode" itemtype="http://schema.org/Episode">
-<div class="module-tab module-sorttab">
-<input type="hidden" name="tab-sort" id="tab-sort" class="module-tab-input">
-<label class="module-tab-name"><i class="icon-sort"></i></label>
-<div class="module-tab-items">
-<div class="module-tab-title">选集<span class="close-drop"><i class="icon-close-o"></i></span><a class="desc sort-button" href="javascript:void(0);" data=""><i class="icon-sort"></i>排序</a></div>
-<div class="module-tab-content">
-<div class="module-blocklist">
-<style>
-.sort-item li{ display:inline}
-.scroll-content li{ display:inline}
-</style>
-    <div class="sort-item">
-        <li id="10"><a title="第01集" href="/play/88638-1-0.html" target="_self">第01集</a></li>
-        <li id="11"><a title="第02集" href="/play/88638-1-1.html" target="_self">第02集</a></li>
-    <div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
+    <!--网盘资源1-->
+    <div class="module-heading">
+        <h2 class="module-title">网盘资源</h2>
+    </div>
+    <div style="width: 70%;white-space: nowrap;text-overflow:ellipsis; overflow: hidden;">
+            <a href="http://m.ssr021.cn/app/index.html?id=test">https://pan.xunlei.cn/app/index.html?id=testn/app/index.html?id=test/app/index.html?id=test</a>    
+        </div>
+        <div style="border-radius:4px;background-color: #0680d1;float: right;margin-top: -25px;">
+            <button id='copyBtn' style="margin:2px 8px;color: aliceblue;font-size: 14px;" >复制链接</button>  
+            <div id="toast" class="toast">链接已复制！</div>  
+        </div>
+    <!--网盘资源2-->
+    <div class="module-heading">
+        <h2 class="module-title">网盘资源</h2>
+    </div>
+    <div style="width: 70%;white-space: nowrap;text-overflow:ellipsis; overflow: hidden;">
+         <a style="" href="http://m.ssr021.cn/app/index.html?id=test">https://pan.xunlei.com/s/VNjKmZwv-erouKKd4UhMiMWuA1?pwd=mtir&path=%2F365%E5%A4%A91-3ID%EF%BC%9A41972</a>
+    </div>
 </div>
 </div>
 </div>
 </div>
 </main>
-<div class="shortcuts-box">
-<div id="shortcuts-info">34252354</div>
-</div>
-<span class="mac_history_set none" alt="" data-name="[综艺]经典传奇2024" data-pic="https://puui.qpic.cn/vcover_vt_pic/0/mzc00200lf1dj7v1662699369617/260">43545</span><span class="mac_hits none" data-mid="3" data-id="88398" data-type="hits"></span>
-</div>
-
-
-
 
 </body>
 </html>
+<style>  
+    .toast {  
+        display: none;  
+        position: fixed;  
+        z-index: 999;  
+        bottom: 20px;  
+        left: 50%;  
+        transform: translateX(-50%);  
+        padding: 10px;  
+        border-radius: 5px;  
+        background-color: #333;  
+        color: white;  
+        font-size: 14px;  
+    }  
+
+    .toast.show {  
+        display: block;  
+    }  
+</style>  
+<script>  
+    document.getElementById('copyBtn').addEventListener('click', function() {  
+        // 创建要复制的链接  
+        var link = 'https://www.example.com'; // 替换为您想要复制的链接  
+        var copyText = document.createElement('textarea');  
+        copyText.style.position = 'fixed'; // 设置textarea的定位，使其不会影响页面布局  
+        copyText.style.top = '0';  
+        copyText.style.left = '0';  
+        copyText.style.width = '100%';  
+        copyText.style.height = '100%';  
+        copyText.textContent = link;  
+        document.body.appendChild(copyText);  
+        copyText.focus();  
+        copyText.select();  
+
+        try {  
+            var successful = document.execCommand('copy');  
+            var msg = successful ? '成功复制链接！' : '复制链接失败，请手动复制！';  
+            var toast = document.getElementById('toast');  
+            toast.textContent = msg;  
+            toast.classList.add('show');  
+            setTimeout(function() { toast.classList.remove('show'); }, 3000); // 3秒后隐藏toast提示  
+        } catch (err) {  
+            console.error('无法复制链接：', err);  
+            toast.textContent = '复制链接失败，请手动复制！';  
+            toast.classList.add('show');  
+            setTimeout(function() { toast.classList.remove('show'); }, 3000); // 3秒后隐藏toast提示  
+        } finally {  
+            document.body.removeChild(copyText); // 移除临时创建的textarea元素  
+        }  
+    });  
+</script>  
