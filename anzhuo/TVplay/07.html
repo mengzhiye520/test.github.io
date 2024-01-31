@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="canonical" href="" />
+	<link rel="stylesheet" type="text/css" href="../style.css"/>
+</head>
+<body ontouchstart class="view page">
+<header id="header" class="wrapper">
+</header>
+<main id="main" class="wrapper">
+<div class="content">
+<div class="box view-heading">
+<div class="mobile-play">
+<div class="module-item-cover">
+<div class="module-item-pic">
+<img src="http://img.lzzyimg.com/upload/vod/20231215-1/3157992958b0ef18bb60d37df1492dcd.jpg">
+</div>
+</div>
+</div>
+<div class="video-cover">
+<div class="module-item-cover">
+<div class="module-item-pic">
+<img src="http://img.lzzyimg.com/upload/vod/20231215-1/3157992958b0ef18bb60d37df1492dcd.jpg">
+</div>
+</div>
+</div>
+<div class="video-info">
+<div class="video-info-header">
+<h1 class="page-title">侠探杰克第二季</h1>
+<style>
+.fsxoyo a
+{
+color:#FF4500;
+}
+</style>
+<div class="video-info-aux">
+<a href="" title="" class="tag-link"><div class="video-tag-icon"><i class=""></i></div>美剧</a>
+<div class="tag-link">
+<a href="" itemprop="url" title=""><span itemprop="contentLocation">2023</span></a>
+</div>
+<div class="tag-link">
+<a href="" itemprop="url" title=""><span itemprop="contentLocation">美国</span></a>
+</div>
+</div>
+<!--
+<a href="/play/88398-0-0.html" class="btn-important btn-large shadow-drop video-info-play" title="立刻播放经典传奇2024"><i class="icon-play"></i><strong>立即播放</strong></a>
+--></div>
+<div class="video-info-main">
+<div class="video-info-items">
+<span class="video-info-itemtitle">导演：</span>
+<div class="video-info-item video-info-actor">
+    山姆·希尔
+</div>
+</div>
+<div class="video-info-items">
+<span class="video-info-itemtitle">主演：</span>
+<div class="video-info-item video-info-actor">
+
+    阿兰·里奇森  玛丽亚·斯坦  鲁克比利克  乔希·布莱克  罗利·科奇瑞恩 
+</div>
+</div>
+
+<div class="video-info-items">
+<span class="video-info-itemtitle">备注：</span>
+<div class="video-info-item">已完结</div></div>
+<div class="video-info-items">
+<span class="video-info-itemtitle">语言：</span>
+<div class="video-info-item">英语</div>
+</div>
+<div class="video-info-items">
+<span class="video-info-itemtitle">剧情：</span>
+<div class="video-info-item video-info-content">
+<p>
+第二季将根据 Child 的 Jack Reacher 系列的第十一部小说《Bad Luck and Trouble》改编。
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="module">
+    <!--网盘资源1-->
+    <div class="module-heading">
+        <h2 class="module-title">百度网盘</h2>
+    </div>
+    <div style="width: 70%;white-space: nowrap;text-overflow:ellipsis; overflow: hidden;color: #0680d1;">
+            <a style="color: #0680d1;" href="https://pan.baidu.com/share/init?surl=ZFiZGhz3VJROSvvDR5-21w&pwd=love">https://pan.baidu.com/share/init?surl=ZFiZGhz3VJROSvvDR5-21w&pwd=love 提取码：love</a>    
+        </div>
+        <div style="border-radius:4px;background-color: #0680d1;float: right;margin-top: -25px;">
+            <button id='copyBtn' style="margin:2px 8px;color: aliceblue;font-size: 14px;" >复制链接</button>  
+            <div id="toast" class="toast">链接已复制！</div>  
+        </div>
+        <text>提取码：love</text>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+</body>
+</html>
+<style>  
+    .toast {  
+        display: none;  
+        position: fixed;  
+        z-index: 999;  
+        bottom: 20px;  
+        left: 50%;  
+        transform: translateX(-50%);  
+        padding: 10px;  
+        border-radius: 5px;  
+        background-color: #333;  
+        color: white;  
+        font-size: 14px;  
+    }  
+
+    .toast.show {  
+        display: block;  
+    }  
+</style>  
+<script>  
+    document.getElementById('copyBtn').addEventListener('click', function() {  
+        // 创建要复制的链接  
+        var link = 'https://pan.baidu.com/share/init?surl=ZFiZGhz3VJROSvvDR5-21w&pwd=love 提取码：love'; // 替换为您想要复制的链接  
+        var copyText = document.createElement('textarea');  
+        copyText.style.position = 'fixed'; // 设置textarea的定位，使其不会影响页面布局  
+        copyText.style.top = '0';  
+        copyText.style.left = '0';  
+        copyText.style.width = '100%';  
+        copyText.style.height = '100%';  
+        copyText.textContent = link;  
+        document.body.appendChild(copyText);  
+        copyText.focus();  
+        copyText.select();  
+
+        try {  
+            var successful = document.execCommand('copy');  
+            var msg = successful ? '成功复制链接！' : '复制链接失败，请手动复制！';  
+            var toast = document.getElementById('toast');  
+            toast.textContent = msg;  
+            toast.classList.add('show');  
+            setTimeout(function() { toast.classList.remove('show'); }, 3000); // 3秒后隐藏toast提示  
+        } catch (err) {  
+            console.error('无法复制链接：', err);  
+            toast.textContent = '复制链接失败，请手动复制！';  
+            toast.classList.add('show');  
+            setTimeout(function() { toast.classList.remove('show'); }, 3000); // 3秒后隐藏toast提示  
+        } finally {  
+            document.body.removeChild(copyText); // 移除临时创建的textarea元素  
+        }  
+    });  
+</script>  
